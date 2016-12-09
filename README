@@ -1,0 +1,13 @@
+React Cart App With Flux Architecture
+==============
+
+How to run application
+--------------
+Run following bash command in root directory.
+
+npm install
+npm start
+
+--------------
+
+You can start application in your browser ( http://localhost:4000 ).

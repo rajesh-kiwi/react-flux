@@ -1,0 +1,11 @@
+.product-div {	
+	border: 1px solid gainsboro;
+    padding: 15px;
+    background-color: coral;
+    color: white;
+    width: 165px;
+    float: left;
+    margin-left: 10px;
+    height: 75px;
+    margin-top: 10px;
+}

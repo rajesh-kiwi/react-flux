@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  
+  tasks:
+    - name: install system packages
+      apt: name={{item}} state=present
+      with_items:
+        - unzip
+        - git
+
+    - name: setup PPA for nodejs
+      shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+    - name: install nodejs
+      apt: name=nodejs state=present
